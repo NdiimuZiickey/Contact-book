@@ -1,0 +1,163 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #f9fafa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Headings */
+h1,
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Form Card */
+form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+form:hover {
+  transform: translateY(-2px);
+}
+
+/* Labels & Inputs */
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fcfcfc;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+/* Buttons */
+button {
+  padding: 0.65rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[type="button"]:hover {
+  background-color: #0069d9;
+}
+
+#deleteContact {
+  background-color: #dc3545;
+}
+
+#deleteContact:hover {
+  background-color: #c82333;
+}
+
+/* Avatar Image */
+#avatarImage img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Table for index.html */
+.table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background-color: #f0f3f5;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Container for layout consistency */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form,
+  .table {
+    width: 90%;
+  }
+
+  input,
+  button {
+    font-size: 0.95rem;
+  }
+}
